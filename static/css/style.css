@@ -27,7 +27,7 @@ body {
 }
 
 section {
-  padding: 40px 0;
+  padding: 32px 0;
 }
 
 section + section {
@@ -142,7 +142,7 @@ h2 {
   font-size: 1.7rem;
   font-weight: 700;
   color: #1a1a2e;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   letter-spacing: -0.01em;
 }
 
@@ -150,8 +150,8 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600;
   color: #2c3e50;
-  margin-top: 28px;
-  margin-bottom: 12px;
+  margin-top: 24px;
+  margin-bottom: 10px;
 }
 
 /* ===== Abstract ===== */
@@ -166,7 +166,7 @@ h3 {
 
 /* ===== Figures ===== */
 .figure {
-  margin: 32px 0;
+  margin: 24px 0;
   text-align: center;
 }
 
@@ -177,17 +177,16 @@ h3 {
 }
 
 .figure.teaser img {
-  max-width: 90%;
+  max-width: 60%;
 }
 
 .figure-caption {
-  margin-top: 12px;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.88rem;
   color: #555;
   line-height: 1.6;
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  padding: 0 20px;
 }
 
 .figure-caption strong {
@@ -205,7 +204,7 @@ h3 {
 .figure-row .figure-item {
   flex: 1;
   min-width: 280px;
-  max-width: 48%;
+  max-width: 40%;
   text-align: center;
 }
 
@@ -215,15 +214,19 @@ h3 {
   border-radius: 4px;
 }
 
+.figure-row .figure-item .figure-caption {
+  padding: 0 8px;
+}
+
 .figure-stack {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   align-items: center;
 }
 
 .figure-stack img {
-  max-width: 90%;
+  max-width: 60%;
 }
 
 /* ===== Tables ===== */
