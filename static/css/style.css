@@ -321,6 +321,69 @@ td.best {
   background: #585b70;
 }
 
+/* ===== In-text Citations ===== */
+a.cite {
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-left: 2px;
+  white-space: nowrap;
+}
+
+a.cite:hover {
+  text-decoration: underline;
+}
+
+/* ===== References ===== */
+.references {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.reference {
+  margin-bottom: 16px;
+  padding-left: 32px;
+  text-indent: -32px;
+  scroll-margin-top: 80px;
+}
+
+.reference:last-child {
+  margin-bottom: 0;
+}
+
+.ref-number {
+  display: inline-block;
+  min-width: 28px;
+  font-weight: 600;
+  color: #2980b9;
+}
+
+.ref-authors {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.ref-title {
+  font-style: italic;
+  color: #34495e;
+}
+
+.ref-venue {
+  color: #555;
+}
+
+.reference a {
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-left: 6px;
+}
+
+.reference a:hover {
+  text-decoration: underline;
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;

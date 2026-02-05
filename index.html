@@ -178,7 +178,7 @@
       <h3>&Delta;Belief-RL Training Improves Interaction-Efficiency</h3>
 
       <p class="table-caption">
-        <strong>Success rate on the test set.</strong> Average success rates and Pass@k of the SFT Baseline, StarPO,
+        <strong>Success rate on the test set.</strong> Average success rates and Pass@k<a href="#ref-4" class="cite">[4]</a> of the SFT Baseline, StarPO<a href="#ref-1" class="cite">[1]</a>,
         and CIA on a held-out test set. Across both model sizes, CIA consistently outperforms all baselines.
       </p>
       <div class="table-wrapper">
@@ -254,7 +254,7 @@
           <strong>Training dynamics.</strong> Mean number of questions per episode (top) and mean fraction of
           repeated questions (bottom) during RL training. Across both Qwen3-1.7B and Qwen3-4B,
           &Delta;Belief-RL reduces the number of turns required and suppresses redundant queries more rapidly
-          than standard GRPO (StarPO).
+          than standard GRPO (StarPO<a href="#ref-1" class="cite">[1]</a>).
         </p>
       </div>
 
@@ -283,7 +283,7 @@
           </div>
         </div>
         <p class="figure-caption">
-          <strong>Pass@k on Twenty Questions.</strong> CIA consistently achieves higher pass@k than the
+          <strong>Pass@k on Twenty Questions.</strong> CIA consistently achieves higher pass@k<a href="#ref-4" class="cite">[4]</a> than the
           Baseline across the entire range of $k$ (up to 128), confirming that the gains extend beyond
           simple policy sharpening to genuinely improved exploration.
         </p>
@@ -330,29 +330,30 @@
           <strong>Test-time interaction scaling.</strong> Average success rate as a function of the interaction budget
           (up to 50 turns) for 1.7B models (top) and 4B models (bottom). CIA exhibits larger performance gains
           and continues to improve as the interaction budget extends beyond the 20-turn training regime.
-          At 4B scale, CIA achieves 26% higher absolute success rate than StarPO at the 50-turn mark.
+          At 4B scale, the increase in absolute success rates from 20 to 50 turns is double for CIA at +26%, compared
+           to +13% for StarPO.
         </p>
       </div>
 
       <h3>Out-of-Distribution Generalization</h3>
       <p>
-        We evaluate OOD generalization using <em>Guess My City</em> and <em>Murder Mystery</em>, two
+        We evaluate OOD generalization using <em>Guess My City</em> and <em>Murder Mystery</em><a href="#ref-2" class="cite">[2]</a>, two
         information-seeking tasks not seen during training.
       </p>
       <div class="figure">
         <img src="static/images/passk_benchmarks_k8_games.png" alt="Out-of-distribution generalization results" style="max-width: 70%;">
         <p class="figure-caption">
-          <strong>OOD generalization.</strong> Pass@k on two out-of-distribution benchmarks
-          (<em>Guess My City</em> and <em>Murder Mystery</em>). Dark bars show Pass@1; lighter stacked
+          <strong>OOD generalization.</strong> Pass@k<a href="#ref-4" class="cite">[4]</a> on two out-of-distribution benchmarks
+          (<em>Guess My City</em> and <em>Murder Mystery</em><a href="#ref-2" class="cite">[2]</a>). Dark bars show Pass@1; lighter stacked
           increments show Pass@8. CIA exhibits robust generalization, consistently surpassing SFT and
-          StarPO baselines across all tested environments.
+          StarPO<a href="#ref-1" class="cite">[1]</a> baselines across all tested environments.
         </p>
       </div>
 
       <h3>Practical Applications</h3>
       <p>
-        We further test generalization on settings that mirror practical applications: <em>User Personalization</em>
-        (multi-turn preference elicitation) and <em>Customer Service</em> (identifying broken functionality
+        We further test generalization on settings that mirror practical applications: <em>User Personalization</em><a href="#ref-3" class="cite">[3]</a>
+        (multi-turn preference elicitation) and <em>Customer Service</em><a href="#ref-2" class="cite">[2]</a> (identifying broken functionality
         through diagnostic questioning).
       </p>
       <div class="figure">
@@ -365,9 +366,9 @@
           </div>
         </div>
         <p class="figure-caption">
-          <strong>Practical applications.</strong> Mean scores on the OOD <em>Customer Service</em> (left) and
-          <em>User Personalization</em> (right) benchmarks. Across both model sizes, CIA strongly outperforms the
-          previous SoTA method, StarPO. On Customer Service, CIA outperforms StarPO by 5.06% (1.7B) and
+          <strong>Practical applications.</strong> Mean scores on the OOD <em>Customer Service</em><a href="#ref-2" class="cite">[2]</a> (left) and
+          <em>User Personalization</em><a href="#ref-3" class="cite">[3]</a> (right) benchmarks. Across both model sizes, CIA strongly outperforms the
+          previous SoTA method, StarPO<a href="#ref-1" class="cite">[1]</a>. On Customer Service, CIA outperforms StarPO by 5.06% (1.7B) and
           11.13% (4B). On User Personalization, CIA offers up to 15% improvements over existing methods.
         </p>
       </div>
@@ -410,6 +411,46 @@
   author = {Auzina, Ilze Amanda and Strüber, Joschka and Hernández-Gutiérrez, Sergio and Goel, Shashwat and Prabhu, Ameya and Bethge, Matthias},
   year   = {2026}
 }</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== References ==================== -->
+  <section>
+    <div class="container">
+      <h2>References</h2>
+      <div class="references">
+        <div class="reference" id="ref-1">
+          <span class="ref-number">[1]</span>
+          <span class="ref-authors">Zihan Wang, Kangrui Wang, Qineng Wang, et al.</span>
+          <span class="ref-title">RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning.</span>
+          <span class="ref-venue">arXiv preprint arXiv:2504.20073, 2025.</span>
+          <a href="https://arxiv.org/abs/2504.20073" target="_blank" rel="noopener">[arXiv]</a>
+        </div>
+
+        <div class="reference" id="ref-2">
+          <span class="ref-number">[2]</span>
+          <span class="ref-authors">Fahim Tajwar, Yiding Jiang, Abitha Thankaraj, Sumaita Sadia Rahman, J Zico Kolter, Jeff Schneider, and Russ Salakhutdinov.</span>
+          <span class="ref-title">Training a Generally Curious Agent.</span>
+          <span class="ref-venue">International Conference on Machine Learning (ICML), 2025.</span>
+          <a href="https://openreview.net/forum?id=UeB3Hdrhda" target="_blank" rel="noopener">[OpenReview]</a>
+        </div>
+
+        <div class="reference" id="ref-3">
+          <span class="ref-number">[3]</span>
+          <span class="ref-authors">Chinmaya Andukuri, Jan-Philipp Fränken, Tobias Gerstenberg, and Noah Goodman.</span>
+          <span class="ref-title">STaR-GATE: Teaching Language Models to Ask Clarifying Questions.</span>
+          <span class="ref-venue">First Conference on Language Modeling (COLM), 2024.</span>
+          <a href="https://openreview.net/forum?id=CrzAj0kZjR" target="_blank" rel="noopener">[OpenReview]</a>
+        </div>
+
+        <div class="reference" id="ref-4">
+          <span class="ref-number">[4]</span>
+          <span class="ref-authors">Mark Chen, Jerry Tworek, Heewoo Jun, et al.</span>
+          <span class="ref-title">Evaluating Large Language Models Trained on Code.</span>
+          <span class="ref-venue">arXiv preprint arXiv:2107.03374, 2021.</span>
+          <a href="https://arxiv.org/abs/2107.03374" target="_blank" rel="noopener">[arXiv]</a>
+        </div>
       </div>
     </div>
   </section>
