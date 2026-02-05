@@ -19,11 +19,13 @@ How can we train agents to navigate uncertainty over long horizons? In this work
 
 If you find this work useful, please cite our paper:
 
+```bibtex
 @article{ica2026,
   title  = {Intrinsic Credit Assignment for Long Horizon Interaction},
   author = {Auzina, Ilze Amanda and Strüber, Joschka and Hernández-Gutiérrez, Sergio and Goel, Shashwat and Prabhu, Ameya and Bethge, Matthias},
   year   = {2026}
 }
+```
 
 ---
 
@@ -45,6 +47,3 @@ This project page is licensed under the MIT License. See the paper for details o
 
 For questions or collaborations, please reach out via the paper's corresponding authors or open an issue in this repository.
 
----
-
-**Template acknowledgment**: This webpage template is adapted from [Nerfies](https://nerfies.github.io).
