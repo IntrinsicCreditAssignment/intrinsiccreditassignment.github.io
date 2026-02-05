@@ -3,9 +3,8 @@
 [![Website](https://img.shields.io/badge/Project-Website-blue)](https://IntrinsicCreditAssignment.github.io)
 <!-- [![Paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org) TODO: Add arXiv link -->
 
-**Project webpage for the ICML 2026 paper**
-
 **Ilze Amanda Auzina\*, Joschka Strüber\*, Sergio Hernández-Gutiérrez\*, Shashwat Goel, Ameya Prabhu, Matthias Bethge**
+
 <sup>*</sup>Equal contribution
 
 ---
