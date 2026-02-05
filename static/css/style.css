@@ -257,9 +257,6 @@ td {
   border-bottom: 1px solid #e8e8e8;
 }
 
-td:nth-child(2) {
-  text-align: right;
-}
 
 tbody tr:hover {
   background: #f7f9fb;
