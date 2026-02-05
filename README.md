@@ -24,7 +24,6 @@ If you find this work useful, please cite our paper:
   author = {Auzina, Ilze Amanda and Strüber, Joschka and Hernández-Gutiérrez, Sergio and Goel, Shashwat and Prabhu, Ameya and Bethge, Matthias},
   year   = {2026}
 }
-```
 
 ---
 
