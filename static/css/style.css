@@ -466,8 +466,18 @@ footer a:hover {
     gap: 16px;
   }
 
+  .hero-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero-logo img {
-    height: 48px;
+    height: 80px;
+  }
+
+  .hero-logo-text {
+    margin-top: -8px;
+    font-size: 0.85rem;
   }
 
   .hero h1 {
