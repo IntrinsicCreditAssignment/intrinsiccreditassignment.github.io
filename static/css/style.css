@@ -41,14 +41,31 @@ section + section {
   background: linear-gradient(180deg, #f0f4f8 0%, #fdfdfd 100%);
 }
 
+.hero-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
 .hero h1 {
   font-family: 'Noto Serif', Georgia, serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.25;
   color: #1a1a2e;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   letter-spacing: -0.02em;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+}
+
+.hero-logo img {
+  height: 60px;
+  width: auto;
 }
 
 /* ===== Authors ===== */
@@ -406,6 +423,15 @@ footer a:hover {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .hero-title {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-logo img {
+    height: 48px;
+  }
+
   .hero h1 {
     font-size: 1.7rem;
   }
