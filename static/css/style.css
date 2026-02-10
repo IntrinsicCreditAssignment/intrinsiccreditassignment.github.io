@@ -61,11 +61,28 @@ section + section {
 
 .hero-logo {
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 
 .hero-logo img {
-  height: 140px;
+  height: 180px;
   width: auto;
+}
+
+.hero-logo-text {
+  display: block;
+  margin-top: -16px;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.hero-logo:hover .hero-logo-text {
+  color: #2980b9;
 }
 
 /* ===== Authors ===== */

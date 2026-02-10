@@ -7,7 +7,7 @@
   <meta name="description" content="We propose ΔBelief-RL, which leverages a language model's own intrinsic beliefs to reward intermediate progress in long-horizon information-seeking tasks.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;700&family=Plus+Jakarta+Sans:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
   <script>
     MathJax = {
@@ -26,6 +26,7 @@
         <h1>Intrinsic Credit Assignment for<br>Long Horizon Interaction</h1>
         <a href="https://tuebingen.ai/" target="_blank" rel="noopener" class="hero-logo">
           <img src="static/images/tuebingen-ai-logo-shuffle.png" alt="Tübingen AI Center">
+          <span class="hero-logo-text">Tübingen AI Center</span>
         </a>
       </div>
 
@@ -299,25 +300,6 @@
         </p>
       </div>
 
-      <h3>Ablations</h3>
-      <div class="figure">
-        <div class="figure-row">
-          <div class="figure-item">
-            <img src="static/images/ablation_lambda.png" alt="Ablation of the reward weight lambda">
-            <p class="figure-caption">
-              <strong>Reward weight $\lambda$.</strong> Moderate values ($\lambda \in \{0.05, 0.1\}$) optimize
-              learning progress, whereas excessive weighting leads to suboptimal convergence.
-            </p>
-          </div>
-          <div class="figure-item">
-            <img src="static/images/ablation_reward_normalization.png" alt="Ablation of reward normalization">
-            <p class="figure-caption">
-              <strong>Reward normalization.</strong> Non-negative shaping (ReLU) provides the most stable and
-              highest-performing training dynamics.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
