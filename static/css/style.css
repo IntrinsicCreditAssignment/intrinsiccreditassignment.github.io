@@ -64,7 +64,7 @@ section + section {
 }
 
 .hero-logo img {
-  height: 60px;
+  height: 140px;
   width: auto;
 }
 
@@ -78,8 +78,7 @@ section + section {
   font-size: 1.05rem;
 }
 
-.authors a,
-.authors span {
+.authors a {
   color: #34495e;
   text-decoration: none;
 }
@@ -89,7 +88,7 @@ section + section {
   text-decoration: underline;
 }
 
-.equal-contrib {
+.author-note {
   font-size: 0.75rem;
   vertical-align: super;
   color: #7f8c8d;
@@ -97,6 +96,28 @@ section + section {
 
 .affiliations {
   font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+.institutions {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 24px;
+}
+
+.institutions a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+.institutions a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.institutions sup {
+  font-size: 0.75rem;
   color: #7f8c8d;
   margin-bottom: 24px;
 }
